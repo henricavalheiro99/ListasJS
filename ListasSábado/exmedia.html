@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <script>
+        var lista = []
+        var soma = 0
+        var media = 0
+        
+        while (true){
+            var numero_digitado = parseFloat(prompt("Digite um número para a média (digite 99 para sair): "))
+            lista.push(numero_digitado)
+            if (numero_digitado == 99){
+                lista.pop()
+                break
+            }
+        }
+        
+        for (var percorre = 0; percorre < lista.length; percorre++){
+            soma += lista[percorre]
+        }
+        
+        media = soma / lista.length
+        alert(media)
+    </script>
+</body>
+</html>
