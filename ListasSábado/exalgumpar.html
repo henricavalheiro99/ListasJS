@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares</title>
+</head>
+<body>
+    <script>
+        var lista = []
+        var quantidade_pares = 0
+        while (true){
+            var numero_digitado = parseInt(prompt("Digite valores para a lista (digite 99 para parar): "))
+            lista.push(numero_digitado)
+            if (numero_digitado == 99){
+                lista.pop()
+                break
+            }
+        }
+
+        for (var percorre = 0; percorre < lista.length; percorre++){
+            if (lista[percorre] %2 == 0){
+                quantidade_pares+= 1
+            }
+        }
+
+        if (quantidade_pares > 0){
+            alert("A lista possui números pares")
+        }
+
+        else{
+            alert("A lista não possui pares")
+        }
+    </script>
+</body>
+</html>
