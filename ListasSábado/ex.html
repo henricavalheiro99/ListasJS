@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <script>
+        var lista_Pares = []
+        while(true){
+            var numero_digitado = parseInt(prompt("Digite um número (1 para sair): "))
+            if (numero_digitado %5 == 0){
+                lista_Pares.push(numero_digitado)
+            }
+            else if (numero_digitado == 1){
+                break
+            }
+        }
+        alert("Os números pares são: [" + lista_Pares + "]")
+    </script>
+</body>
+</html>

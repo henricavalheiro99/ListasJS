@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var lista_Strings5 = []
+        while(true){
+            var String_digitada = prompt("Digite uma palavra (digite s para sair): ")
+            if (String_digitada.length > 5){
+                lista_Strings5.push(String_digitada)
+            }
+            else if (String_digitada == "s" || String_digitada == "S"){
+                break
+            }
+        }
+        alert("Lista de palvras com mais de 5 caracteres: [" + lista_Strings5 + "]")
+    </script>
+</body>
+</html>

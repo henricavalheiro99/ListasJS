@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <script>
+        // let bancos = ["NuBank", "Caixa", "Inter"]
+        // console.log()
+        // var ultimo_elemento = bancos.pop() - armazenei na variável o último elemento
+        // bancos.push("Santander") - adiciona ao final da lista
+        // bancos.splice(1,1) - remove o elemento da posição 1 e apenas aquele elemento pq eu indiqeui 1 dps
+        // For (var numero in lista) - mostra a posição de cada elemento na lista, ou seja, com isso você pega o lenght
+        // For (var numero of lista) - mostra o index de cada elemento na lista, ou seja, com isso você vê a lista de elementos
+
+        var lista = [3, 2, 1, 4, 0, 6]
+        var listaPar = []
+
+        for (var numero = 0; numero < lista.length; numero++) {
+            //for (var i = 0; i < lista[numero]; i++){
+                if (lista[numero] %2 == 0){
+                    listaPar.push(lista[numero])
+                }
+        }
+        
+
+        console.log(listaPar)
+
+    </script>
+</body>
+</html>
